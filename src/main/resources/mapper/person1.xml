@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--
+1、必须要有namespace
+2、namespace必须要是全限定类名
+-->
+<mapper namespace="mybatis.dao.Person1Dao">
+
+    <insert id="insert">
+        INSERT INTO Person1(id,username,password)
+        VALUES (#{person1.id},#{person1.username},#{person1.password})
+    </insert>
+</mapper>
